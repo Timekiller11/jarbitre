@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+	<name>J Arbitre</name>
+
+	<creationDate>Février 2015</creationDate>
+	<author>Charles-David Forest-Le Noir</author>
+	<authorEmail>charlesforest11@gmail.com</authorEmail>
+	<authorUrl>http://o-meta.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	
+	<version>0.2.2</version>
+
+	<description>Jeu éducatif réalisé pour la fédération de soccer du Québec.</description>
+ 
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+ 
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jarbitre.php</filename>
+		<filename>controller.php</filename>
+		<folder>language</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+ 
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_jarbitre/images/soccer-16x16.png">Jeu Arbitre</menu>
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>jarbitre.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<!-- tables files section -->
+			<folder>tables</folder>
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+			<!-- controllers files section -->
+			<folder>controllers</folder>
+			<!-- helpers files section -->
+			<folder>helpers</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jarbitre.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jarbitre.sys.ini</language>
+		</languages>
+	</administration>
+ 	
+	<media destination="com_jarbitre" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+</extension>

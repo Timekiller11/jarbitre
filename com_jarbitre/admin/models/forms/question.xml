@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="questions">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="question"
+			type="text"
+			label="COM_JARBITRE_QUESTION_QUESTION_LABEL"
+			description="COM_JARBITRE_QUESTION_QUESTION_DESC"
+			size="40"
+			class="inputbox validate-question"
+			required="true"
+			default=""
+		/>
+		<field
+			name="A"
+			type="text"
+			label="COM_JARBITRE_QUESTION_BONNE_LABEL"
+			description="COM_JARBITRE_QUESTION_BONNE_DESC"
+			size="40"
+			class="inputbox validate-bonne"
+			required="true"
+			default=""
+		/>
+		<field
+			name="B"
+			type="text"
+			label="COM_JARBITRE_QUESTION_FAUSSE1_LABEL"
+			description="COM_JARBITRE_QUESTION_FAUSSE1_DESC"
+			size="40"
+			class="inputbox validate-fausse"
+			required="true"
+			default=""
+		/>
+		<field
+			name="C"
+			type="text"
+			label="COM_JARBITRE_QUESTION_FAUSSE2_LABEL"
+			description="COM_JARBITRE_QUESTION_FAUSSE2_DESC"
+			size="40"
+			class="inputbox validate-fausse"
+			default=""
+		/>
+		<field
+			name="D"
+			type="text"
+			label="COM_JARBITRE_QUESTION_FAUSSE3_LABEL"
+			description="COM_JARBITRE_QUESTION_FAUSSE3_DESC"
+			size="40"
+			class="inputbox validate-fausse"
+			default=""
+		/>
+	</fieldset>
+</form>

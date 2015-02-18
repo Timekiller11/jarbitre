@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="usernames"
+			type="text"
+			label="COM_JARBITRE_JARBITRE_USERNAMES_LABEL"
+			description="COM_JARBITRE_JARBITRE_USERNAMES_DESC"
+			size="40"
+			class="inputbox validate-usernames"
+			required="true"
+			default=""
+		/>
+		<field
+			name="catid"
+			type="category"
+			extension="com_jarbitre"
+			class="inputbox"
+			default=""
+			label="COM_JARBITRE_JARBITRE_FIELD_CATID_LABEL"
+			description="COM_JARBITRE_JARBITRE_FIELD_CATID_DESC"
+			required="true"
+		>
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+	</fieldset>
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="list"
+				label="COM_JARBITRE_JARBITRE_FIELD_SHOW_CATEGORY_LABEL"
+				description="COM_JARBITRE_JARBITRE_FIELD_SHOW_CATEGORY_DESC"
+				default=""
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+		<fieldset name="accesscontrol">
+	    	<field name="asset_id" type="hidden" filter="unset" />
+	    	<field name="rules"
+	    		type="rules"
+	    		label="JFIELD_RULES_LABEL"
+	    		translate_label="false"
+	    		filter="rules"
+	    		validate="rules"
+	    		class="inputbox"
+	    		component="com_jarbitre"
+	    		section="message"
+	    	/>
+	    </fieldset>
+	</fields>
+</form>
