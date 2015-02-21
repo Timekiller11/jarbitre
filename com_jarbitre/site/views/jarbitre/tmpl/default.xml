@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="COM_JARBITRE_JARBITRE_VIEW_DEFAULT_TITLE">
+	<layout title="COM_JARBITRE_QUESTION_VIEW_DEFAULT_TITLE">
 		<message>
-			<![CDATA[COM_JARBITRE_JARBITRE_VIEW_DEFAULT_DESC]]>
+			<![CDATA[COM_JARBITRE_QUESTION_VIEW_DEFAULT_DESC]]>
 		</message>
 	</layout>
 	<fields
-		name="request"
-		addfieldpath="/administrator/components/com_jarbitre/models/fields"
-	>
+		name="request">
 		<fieldset name="request">
 			<field
-				name="id"
-				type="jarbitre"
-				label="COM_JARBITRE_JARBITRE_FIELD_USERNAMES_LABEL"
-				description="COM_JARBITRE_JARBITRE_FIELD_USERNAMES_DESC"
+				name="answer"
+				type="hidden"
+				label="COM_JARBITRE_QUESTION_FIELD_USERNAMES_LABEL"
+				description="COM_JARBITRE_QUESTION_FIELD_USERNAMES_DESC"
 			/>
 		</fieldset>
 	</fields>

@@ -1,0 +1,102 @@
+@-webkit-keyframes bouge
+{
+    0%
+    {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes bouge
+{
+    0%
+    {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#jeuComp{
+	padding:90px;
+	/*background-image: url('/joomla/components/com_jarbitre/views/question/tmpl/images/fond.svg');
+	background-position: bottom;
+	background-size: 200%;
+	background-repeat: repeat-x;*/
+
+}
+
+#conteneur{
+	width:90%;
+	overflow: hidden;
+	position: relative;
+}
+
+#conteneurFond{
+	width:100%;
+	overflow: hidden;
+}
+
+#fond{
+	-webkit-animation: bouge 10s linear;
+    animation: bouge 10s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position:absolute;
+    width:200%;
+    top:0;
+    left:0;
+    z-index: 0;
+    padding-top: 8%;
+}
+
+#cadrage{
+	z-index: 5;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+}
+
+.choix{
+	width:100%;
+	height:10%;
+	min-height: 35px;
+	background:#00539F;
+	color:#fff;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-top: 25px;
+	cursor:pointer;
+	z-index: 10;
+	position: relative;
+}
+
+.choix span{
+	display:inline-block;
+	margin-top:9px;
+	margin-right: 10px;
+}
+
+.choix img{
+	float:left;
+	margin:4px 0 0 5px;
+}
+
+.choix:hover
+{ 
+    background:#0075CC;
+}

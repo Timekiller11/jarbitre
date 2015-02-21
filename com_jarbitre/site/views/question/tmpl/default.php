@@ -2,6 +2,10 @@
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 ?>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<div id='jeuComp'>
 <h1><?php echo $this->item->question; ?>
 </h1>
 <h3><?php echo $this->item->A; ?></h3>
@@ -13,3 +17,5 @@ defined('_JEXEC') or die('Restricted access');
       method="post" name="questionForm" id="jarbitre-form" class="form-validate">
       <input type='hidden' name='answer' />
 </form>
+
+</div>
